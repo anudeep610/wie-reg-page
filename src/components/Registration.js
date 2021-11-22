@@ -194,26 +194,7 @@ export default function Registration() {
                     </Col>
                 </Form>
             </Container>
-            <footer>
-
-                <div class="social">
-                    <ul class="social_icon">
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-                </div><br></br>
-                <div class="menu1">
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-
-                    </ul>
-                </div><br></br>
-                <div class="p1">©2021 IEEE SIT SB | All Rights Reserved </div>
-            </footer>
+            
 
             {renderDetailsForm()}
         </>
