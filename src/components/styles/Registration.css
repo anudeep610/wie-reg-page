@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway',sans-serif;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  background-image: url('./modern-background-with-lines\ \(1\).jpg');
+  /* padding: 0 10px; */
+}
+.heading{
+    
+font-family: 'Fredericka the Great', cursive;
+  font-size:20vh;
+  color: #fff;
+  text-align: center;
+  text-shadow:#7457c9 1vh 0.5vh ;
+
+}
+
+.para{
+    color: rgb(180, 165, 192);
+  text-align: center;
+  font-size: 4vh;
+}
+h1 {
+    font-family: 'Raleway';
+    color: #64ffbe;
+    font-size: 7vh;
+    font-weight: 600;
+    /* text-decoration: underline solid 2px #7357c9a4; */
+    margin: 40px 0;
+    text-align: center;
+  }
+  .mb-3
+  {
+      width: 70%;
+      transform: translateX(30vh);
+      
+  }
+  .home
+  {
+    transform: translateX(-90vh);
+
+  }
+  button{
+      border: none;
+      background: transparent;
+      color: #64ffbe;
+      font-size: 4.3vh;
+      font-weight: 700;
+      width: 27%;
+  }
+  .bttn
+  {
+     background: #7457c9;
+     border: none;
+     color: #fff;
+     transition: all .3s ease;
+     font-weight: 700;
+     border-radius: 15px;
+  }
+  .bttn:hover
+  {
+
+    box-shadow: 0 4px 4px #64ffbe;
+    background: #7457c9;
+     border: none;
+     color: #fff;
+  }
+  @media screen and (max-width:700px)
+  {
+    .mb-3
+    {
+        width: 70%;
+        transform: translateX(10vh);
+    }
+    .heading{
+    margin-top: 4vh;
+    font-family: 'Fredericka the Great', cursive;
+      font-size:9vh;
+      color: #fff;
+      text-align: center;
+      text-shadow:#7457c9 0.4vh 0.3vh ;
+    
+    }
+    .para{
+        color: #fff;
+      text-align: center;
+      font-size: 2.6vh;
+    }
+    h1 {
+        font-family: 'Raleway';
+        color: #64ffbe;
+        font-size: 6vh;
+        font-weight: 400;
+        /* margin: 40px 0; */
+        text-align: center;
+      }
+      .home
+  {
+    transform: translateX(-20vh);
+
+  }
+  button{
+    border: none;
+    background: transparent;
+    color: #64ffbe;
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+  }
+.mod-head
+{
+  background: #64ffbe;
+font-weight: 900;
+  color: #16161a;
+}
+.mod-body
+{
+  background-color: #16161a;
+  font-weight:700 ;
+  
+}
+.mod-p
+{
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.mod-f
+{
+  color: #fff;
+}
+input{
+  text-align: center;
+}
+
+button:disabled{
+  background-color: grey;
+}
+
+button:disabled:hover{
+  background-color: grey;
+  box-shadow: none;
+}
