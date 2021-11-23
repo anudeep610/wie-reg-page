@@ -38,6 +38,7 @@ export default function Registration() {
             })
             .catch(response => {
                 console.log(response);
+                setLoading(false);
                 alert("please try again")
             });
         setTeamDetails({
