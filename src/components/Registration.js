@@ -47,6 +47,7 @@ export default function Registration() {
             teamSize: ''
         });
         setShowRenderDetailsForm(false);
+        setLoading(false);
     }
 
     const handleFile = (e) => {
@@ -162,7 +163,7 @@ export default function Registration() {
                     </h3>
                 </Row>
             </Container>
-            <Container style={{ marginTop: "4rem", display:"flex", flexDirection:"column", justifyContent:"center" }}>
+            <Container style={{ marginTop: "4rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                 <h1 className="reg">Register Here</h1>
                 <Form>
                     <Row>
@@ -175,7 +176,16 @@ export default function Registration() {
                     <Row>
                         <Col>
                             <Form.Group className="mb-3">
-                                <Form.Control value={teamDetails.domain} required type="text" placeholder="Domain" onChange={(e) => setTeamDetails({ ...teamDetails, domain: e.target.value })} />
+                                {/* <Form.Control value={teamDetails.domain} required type="text" placeholder="Domain" onChange={(e) => setTeamDetails({ ...teamDetails, domain: e.target.value })} /> */}
+                                <Form.Select value={teamDetails.domain} required onChange={(e) => setTeamDetails({ ...teamDetails, domain: e.target.value })}>
+                                    <option value="">Select a Domain</option>
+                                    <option value="Agriculture">Agriculture</option>
+                                    <option value="Health Care">Health Care</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Home Security">Home Security</option>
+                                    <option value="Workplace Management">Workplace Management</option>
+                                    <option value="Miscellaneous">Miscellaneous</option>
+                                </Form.Select>
                             </Form.Group>
                         </Col>
                     </Row>
@@ -195,7 +205,7 @@ export default function Registration() {
                     </Col>
                 </Form>
             </Container>
-            
+
 
             {renderDetailsForm()}
         </>
