@@ -65,7 +65,7 @@ export default function Registration() {
                 <p className="mod-p">Team Name : {teamDetails.teamName}</p>
                 <p className="mod-p">Domain : {teamDetails.domain}</p>
                 <p className="mod-p">Team Size :  {teamDetails.teamSize}</p>
-                <p className="mod-f">Team leader Details</p>
+                <p className="mod-f">Team leader Details (should be a female)</p>
                 <Form >
                     <Row>
                         <Col xs={8}>
