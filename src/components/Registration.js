@@ -37,7 +37,6 @@ export default function Registration() {
                 }
             })
             .catch(response => {
-                console.log(response);
                 setLoading(false);
                 alert("please try again")
             });
@@ -47,7 +46,6 @@ export default function Registration() {
             teamSize: ''
         });
         setShowRenderDetailsForm(false);
-        setLoading(false);
     }
 
     const handleFile = (e) => {
@@ -61,7 +59,7 @@ export default function Registration() {
         }
         return <Modal size="lg" onHide={() => setShowRenderDetailsForm(false)} show={showRenderDetailsForm}>
             <Modal.Header className="mod-head">
-                <Modal.Title style={{ "font-weight": "700" }}>Team Details</Modal.Title>
+                <Modal.Title style={{ "fontWeight": "700" }}>Team Details</Modal.Title>
             </Modal.Header>
             <Modal.Body className="mod-body">
                 <p className="mod-p">Team Name : {teamDetails.teamName}</p>
@@ -146,14 +144,14 @@ export default function Registration() {
             {
                 loading ? <Loader
                     type="Puff"
-                    color="#00BFFF"
+                    color="#64ffbe"
                     height={100}
                     width={100}
                 /> : null
             }
             <Container>
                 <Row>
-                    <a href="https://ieee-sit-sb-wie-code-2021.netlify.app/" className="home" style={{ "margin-top": "4vh" }}><button><span ><i class="fas fa-chevron-left"></i></span> Home</button></a>
+                    <a href="https://ieee-sit-sb-wie-code-2021.netlify.app/" className="home" style={{ "marginTop": "4vh" }}><button><span ><i className="fas fa-chevron-left"></i></span> Home</button></a>
                 </Row>
                 <Row>
                     <div className="heading">WIE CODE</div>
