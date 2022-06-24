@@ -1,1 +1,3 @@
-Registration Page of wie hackathon by IEEE SIT SB
+Registration Page of wie hackathon website
+
+http://wie-reg-page.herokuapp.com/
