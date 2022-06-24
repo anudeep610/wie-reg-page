@@ -1,1 +1,1 @@
-Registration Page of wie hackathon website
+Registration Page of wie hackathon by IEEE SIT SB
